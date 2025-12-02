@@ -14,8 +14,8 @@
   },
   "license": "MIT",
   "type": "module",
-  "main": "./dist/preact-with-htm-bundle.js",
-  "module": "./dist/preact-with-htm-bundle.js",
+  "main": "./dist/preact-with-htm-bundle.esm.js",
+  "module": "./dist/preact-with-htm-bundle.esm.js",
   "types": "./dist/preact-with-htm-bundle.d.ts",
   "scripts": {
     "dev": "vite",
