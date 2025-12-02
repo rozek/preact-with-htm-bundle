@@ -1,4 +1,4 @@
-var n$1, l$1, t$2, i$1, r$1, f$1, e$2, o$1, c$1, s$1, h$1, a$1 = {}, p$1 = [], y$1 = /(mi|mn|mo|ms$|mte|msp)/, v$1 = Array.isArray, w$1 = p$1.slice, d$1 = Object.assign;
+var n$1, l$1, u$1, t$2, i$1, r$1, f$1, e$2, o$1, c$1, s$1, h$1, a$1 = {}, p$1 = [], y$1 = /(mi|mn|mo|ms$|mte|msp)/, v$1 = Array.isArray, w$1 = p$1.slice, d$1 = Object.assign;
 function g$1(n2) {
   n2 && n2.parentNode && n2.remove();
 }
@@ -265,7 +265,9 @@ n$1 = { __e: function(n2, l2, u2, t2) {
     }
   }
   throw r$1 = 0, n2;
-} }, l$1 = 0, M.prototype.setState = function(n2, l2) {
+} }, l$1 = 0, u$1 = function(n2) {
+  return null != n2 && null == n2.constructor;
+}, M.prototype.setState = function(n2, l2) {
   var u2;
   u2 = null != this.__s && this.__s != this.state ? this.__s : this.__s = d$1({}, this.state), "function" == typeof n2 && (n2 = n2(d$1({}, u2), this.props)), n2 && (d$1(u2, n2), this.__v && (l2 && this._sb.push(l2), x$1(this)));
 }, M.prototype.forceUpdate = function(n2) {
@@ -626,6 +628,7 @@ export {
   b$1 as createRef,
   m$1 as html,
   J as hydrate,
+  u$1 as isValidElement,
   G$1 as render,
   H$1 as toChildArray,
   b as useCallback,
