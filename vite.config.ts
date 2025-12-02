@@ -1,14 +1,6 @@
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-/*
-  resolve: {
-    alias: [
-      { find: 'preact/hooks', replacement: 'node_modules/preact/hooks/dist/hooks.esm.js' },
-      { find: 'preact/compat', replacement: 'node_modules/preact/compat/dist/compat.esm.js' }
-    ]
-  },
-*/
   build: {
     lib: {
       entry: './src/preact-with-htm-bundle.ts',
